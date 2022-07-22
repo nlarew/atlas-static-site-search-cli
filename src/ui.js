@@ -3,14 +3,6 @@ const React = require("react");
 const { Text } = require("ink");
 
 const { execSync } = require("child_process");
-// stderr is sent to stdout of parent process
-// you can set options.stdio if you want it to go elsewhere
-
-// const { spawnSync } = require("child_process");
-// const child = spawnSync("ls");
-// console.error("error", child.error);
-// console.log("stdout ", child.stdout);
-// console.error("stderr ", child.stderr);
 
 const App = ({ groupId, clusterName, publicKey, privateKey, sitemapUrl }) => {
 	const [appId, setAppId] = React.useState();

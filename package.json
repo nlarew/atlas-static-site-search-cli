@@ -1,6 +1,6 @@
 {
 	"name": "atlas-static-site-search-cli",
-	"version": "0.0.18",
+	"version": "0.0.20",
 	"license": "MIT",
 	"bin": {
 		"atlas-static-site-search-cli": "./lib/cli.js",
@@ -12,7 +12,7 @@
 	"scripts": {
 		"test": "xo && ava",
 		"rollup": "rollup -c",
-		"publish": "npm run rollup && npm publish"
+		"ship": "npm run rollup && npm publish"
 	},
 	"files": [
 		"lib/cli.js"

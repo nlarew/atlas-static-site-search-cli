@@ -1,4 +1,3 @@
-import path from "path"
 import babel from "rollup-plugin-babel";
 import shebang from "rollup-plugin-preserve-shebang";
 import jsx from "rollup-plugin-jsx";
@@ -15,13 +14,7 @@ export default {
 	plugins: [
 		multiInput(),
 		babel(),
-		shebang({
-			// Override the entry. By default, uses `input` from config:
-			// entry: path.resolve(process.cwd(), "src/cli.js"),
-
-			// You can also set it manually if you want, which will always prepend it:
-			shebang: "#!/usr/bin/env node",
-		}),
+		shebang({ shebang: "#!/usr/bin/env node" }),
 		jsx({ factory: "React.createElement" }),
 	],
 };

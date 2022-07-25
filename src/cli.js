@@ -53,7 +53,7 @@ const App = ({ groupId, clusterName, publicKey, privateKey, sitemapUrl }) => {
 	].join(" ");
 
 	React.useEffect(() => {
-		const stdout = execSync(`${vars} lib/setup.sh`);
+		const stdout = execSync(`${vars} ${__dirname}/setup.sh`);
 		const lines = stdout.toString().trim().split("\n");
 		const last = lines[lines.length - 1];
 		const id = last.split(":")[1].trim();

@@ -1,3 +1,7 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+**THIS IS NOT MAINTAINED** - the content has moved to https://www.github.com/mongodben/atlas-static-site-search
+
 # atlas-static-site-search-cli
 
 Set up [Atlas Static Site Search](https://github.com/mongodben/atlas-static-site-search) for your website with one command.
